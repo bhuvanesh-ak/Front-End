@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>DOM BASICS</h2>
+
+    <p id="demo">hello</p>
+    <p class="bhu">Hiii helllo</p>
+    <p class="bhu">Hiii helllo</p>
+    <button onclick="displayDate()">The time is?</button>
+    <button id="dont">Don't click</button>
+    <!-- Buttons are defined -->
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hey!";
+        // changes text in the para with id "demo" to the specified text
+        document.getElementById("demo").style.color = "red";
+        // changes text in the para with id "demo" to the specified color
+        const a = document.getElementsByClassName("bhu")
+        a[1].innerHTML = "Hello.How are you?";
+        // changes text in the para with classname "bhu" to the specified text.
+        //  accessed using index values
+        document.getElementsByClassName("bhu")[1].style.color = "blue";
+        document.getElementsByClassName("bhu")[0].style.color = "magenta";
+        // changes text to the specified color
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+        // displays date and time
+        document.getElementById("dont").addEventListener("click", functionn);
+        // if the above event occurs, the specified function is called
+        function functionn() {
+            alert("Go back!!!")
+        }
+
+    </script>
+
+</body>
+
+</html>

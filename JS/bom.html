@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Window</h2>
+
+    <p id="demo"></p>
+    <p id="loc"></p>
+    <p id="pro"></p>
+    <input type="button" value="Load new document" onclick="newDoc()">
+    <!-- this button loads a new page -->
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            "Browser inner window width: " + window.innerWidth + "px<br>" +
+            "Browser inner window height: " + window.innerHeight + "px";
+
+        // returns the inner window height and width
+
+        document.getElementById("loc").innerHTML =
+            "Page location is " + window.location.pathname;
+        // returns the path and filename of the current page
+
+        document.getElementById("pro").innerHTML =
+            "Page protocol is " + window.location.protocol;
+        //  returns the web protocol used (http: or https:)
+
+        function newDoc() {
+            window.location.assign("https://github.com/")
+        }
+        // loads a new github page
+
+
+        function myFunction() {
+            alert("I am an alert box!");
+        }
+// triggers an alert
+    </script>
+
+</body>
+
+</html>

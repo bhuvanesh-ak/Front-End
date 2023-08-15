@@ -1,0 +1,1 @@
+    -> date.js contains examples for Javascript date functions
