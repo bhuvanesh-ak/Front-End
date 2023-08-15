@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    /* The content in body is styled to lightblue color */
+  }
+  
+h1 {
+    color: rgb(41, 210, 11);
+    background-color: darkgrey;
+    margin-left: 20px;
+}
+/* h1 tag is styled accordingly */
+.center {
+    text-align: center;
+    color: red;
+}
+/* Class center is aligned center and color is set to red */
