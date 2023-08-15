@@ -1,0 +1,66 @@
+  body{
+    background-color:cornflowerblue;
+  }
+  /* The entire background is set to this color */
+
+    p{
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+  /* The para element is set to the specified properties */
+
+  p:first-child {
+    color: rgb(212, 12, 12);
+  } 
+  /* The first paragraph in a set of paragraphs is set to the above mentioned color */
+
+  p::first-letter {
+    color: #178dc9;
+    font-size: xx-large;
+  }
+  /* The first letter of the para is set to the mentioned color */
+  
+  p::first-line {
+    color: #f618cd;
+    font-variant: small-caps;
+  }
+  /* The first line of the para is set to the specified color*/
+  
+  div:hover p {
+    display: block;
+  }
+  /* The text in p is visible when hovered over the div text */
+
+  img{
+    opacity:0;
+    border:20px;
+    margin-left:500px;
+    margin-top:200px; 
+  }
+  /* Normally the image is not visible,since opacity is set to 0 */
+
+  img:hover{
+    opacity:1.0;
+    border:20px;
+    margin-left:350px;
+    margin-top:200px;
+  }
+  /* When the user hovers over the page,the image is visible since opacity is set to 1 when hovered over */
+
+  ::marker {
+    color: red;
+    font-size: 23px;
+  }
+  /* styles the markers of list items */
+
+  ::selection {
+    color: red;
+    background: yellow;
+  }
+  /* When the text is selected , the selected area appears in red text with yellow background */
+
+  [class|="top"] {
+    background: yellow;
+  }
+  /* When class "top" is used,the background is set to yellow */

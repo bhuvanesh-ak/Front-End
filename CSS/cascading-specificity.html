@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Cascading</title>
+</head>
+<style>
+    p {
+        color: seagreen;
+        font-size: 15px;
+    }
+
+    /* paragraph is styled accordingly */
+    .para {
+        background-color: aquamarine;
+    }
+
+    /* a class named para is defined with specified styles */
+    p {
+        color: darkgoldenrod;
+        background-color: darkblue;
+    }
+
+    #id {
+        background-color: darkgreen;
+    }
+
+    /* Already all elements with para tag is defined with certain style*/
+    /* By the property of Cascading, lastly styled tag is selected*/
+</style>
+</head>
+
+<body>
+    <p class="para">This is an example for Cascading</p>
+
+    <p id="id">This is an example for Specificity</p>
+    <!-- Id has more specificity than class and element selectors,so it is given priority -->
+    <p>This is a paragraph</p>
+</body>
+
+</html>
+

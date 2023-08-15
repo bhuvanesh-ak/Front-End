@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Forms</title>
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <!-- external css file is linked -->
+    <link rel="icon" type="image/x-icon" href="./forms.png" />
+    <!-- Icon is added -->
+    
+</head>
+
+<body>
+    <form>
+        <div class="forms">
+            <div class="title">
+                <!-- Each para is declared in a class as font and size changes -->
+                <p class="p1">Google Form Sample</p>
+                <p class="p2">Here are all of the question types</p>
+                <hr />
+                <p class="email">
+                    bhuvanesh.23ec@licet.ac.in
+                    <a href="https://accounts.google.com/AccountChooser" style="text-decoration: none; font-weight: 100;" >Switch accounts</a>
+                    <img src="./clouddone.svg" class="cloudsave">
+                </p>
+                <!-- Email and autosave icon is added -->
+                <p class="notShared">Not shared<img src="./Screenshot from 2023-06-26 16-13-51.png" class="mail"></p>
+                <!-- Mail icon is added -->
+            </div>
+            <div class="titlesList">
+                <div class="text">This is a text question.</div>
+                <p class="text-primary">
+                    Limited space for typed response.Great space for name of respondee
+                    or short answer
+                </p>
+                <div class="input-text">
+                    <input type="input" name="response" placeholder="Your answer" />
+                </div>
+                <!-- Input field and outline of form field is given in class -->
+            </div>
+            <div class="titlesList">
+                <div class="text">This is a paragraph question</div>
+                <p class="text-primary">Extended space for longer answer</p>
+                <div class="input-para">
+                    <textarea placeholder="Your answer" class="input-paraStyling"   cols="30" rows="1" ></textarea>
+                </div>
+            </div>
+            <div class="titlePara ">
+                <div class="text">This is a multiple choice question</div>
+                <p class="text-primary">
+                    May click one of the choices or respond to "other"
+                </p>
+                <input type="radio" id="c1" class="radio" name="a"/>
+                <label for="c1">Choice 1</label><br />
+                <br />
+                <input type="radio" id="c2" class="radio" name="a"/>
+                <label for="c2">Choice 2</label><br /><br />
+                <input type="radio" id="c3" class="radio" name="a" /><label for="c3">
+                    Other:</label>
+                <input class="inputline" type="text" name="response" />
+                <br /><br />
+            </div>
+            <!-- The above tags are used for multi choice question. Only one option can be chosen -->
+            <div class="titlePara ">
+                <div class="text">This is a checkbox question</div>
+                <p class="text-primary">
+                    Similar to multiple choice; multiple responses available
+                </p>
+                <input type="checkbox" id="cb1" class="check" value="HTML" />
+                <label for="cb1">Choice 1</label><br /><br />
+                <input type="checkbox" id="cb2" class="check" value="CSS" />
+                <label for="cb2">Choice 2</label><br /><br />
+                <input type="checkbox" id="cb3" class="check" value="JavaScript" />
+                <label for="cb3">Other:</label><input type="text" class="inputline" name="response"/>
+            </div>
+            <!--The above tags are used for checkboxes. Multiple options can be selected-->
+            <div class="titlesList">
+                <div class="text">This is a choose from a list question</div>
+                <p class="text-primary">Drop down menu format</p>
+                <div class="input-text">
+                    <select id="list" name="list" placeholder="Choose" class="dropdown">
+                        <option value="Choose" style="color:#dcd7d7">Choose</option>
+                        <option value="Choice 1">Choice 1</option>
+                        <option value="Choice 2">Choice 2</option>
+                        <option value="Choice 3">Choice 3</option>
+                    </select>
+                </div>
+            </div>
+            <!-- This section contains the tags for drop down list box. One option can be chosen from them -->
+            <div class="titlePara">
+                <div class="text">This is a scale question</div>
+                <p class="text-primary">
+                    You may change the scale up to 5; Similar to Likert Scale
+                </p>
+                <div class="position">
+                    <p class="ScaleTextPosition">Strongly disagree</p>
+                    <div class="position scale marginGrid">
+                        <label class="labelScale" for="scale1">1</label>
+                        <input class="radio2"  name="marginGrid"type="radio" />
+                    </div>
+                    <div class="position scale marginGrid">
+                        <label class="labelScale" for="scale2">2</label>
+                        <input class="radio2" name="marginGrid" type="radio">
+                    </div>
+                    <div class="position scale marginGrid">
+                        <label class="labelScale" for="scale3">3</label>
+                        <input class="radio2" name="marginGrid" type="radio">
+                    </div>
+                    <div class="position scale marginGrid">
+                        <label class="labelScale" for="scale4">4</label>
+                        <input class="radio2" name="marginGrid" type="radio">
+                    </div>
+                    <div class="position scale marginGrid">
+                        <label class="labelScale" for="scale5">5</label>
+                        <input class="radio2" name="marginGrid" type="radio">
+                    </div>
+                    <p class="ScaleTextPosition ">Strongly agree</p>
+                </div>
+            </div>
+            <!-- This section is used for scale question. An option can be selected based on value -->
+            <div class="grid-s">
+                <div class="text">This is a grid question</div>
+                <p class="text-primary">
+                    Rate Your Google Form Knowledge - Multiple Responses Available
+                </p>
+
+                <div class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item">I get it</div>
+                    <div class="grid-item">I have a pretty good grasp</div>
+                    <div class="grid-item">Neutral</div>
+                    <div class="grid-item">I am struggling</div>
+                    <div class="grid-item">I don't get it</div>
+                </div>
+                <div class="grid-contain1 ">
+                    <div class="background GridtextPosition">Uses for Google Forms</p></div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-1" value="I get it" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-1" value="I have a pretty good grasp" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-1" value="Neutral" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-1" value="I am struggling" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-1" value="I don't get it" />
+                    </div>
+                    <div class="background GridtextPosition"><p>Creating Google Forms</p></div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-2" value="I get it" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-2" value="I have a pretty good grasp" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-2" value="Neutral" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-2" value="I am struggling" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-2" value="I don't get it" />
+                    </div>
+                    <div class="background GridtextPosition"><p>Sending completed Google form</p></div>
+                   
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-3" value="I get it" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-3" value="I have a pretty good grasp" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-3" value="Neutral" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-3" value="I am struggling" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-3" value="I don't get it" />
+                    </div>
+                    <div class="background GridtextPosition"><p>Using results from Google Forms</p></div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-4" value="I get it" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-4" value="I have a pretty good grasp" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-4" value="Neutral" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-4" value="I am struggling" />
+                    </div>
+                    <div class="grid-item background">
+                        <input class="radio1" type="radio" name="radio-group-4" value="I don't get it" />
+                    </div>
+                </div>
+            </div>
+            <!-- This grid box is used for multiple questions with responses of same kind. Only one option can be selected for a question -->
+            <div>
+                <button class="button1">Submit</button>
+                <!-- Submit button -->
+                <button class="button2">Clear form</button>
+                <!-- This button is used for clear form -->
+                <p class="endline1">Never submit passwords through Google Forms.</p>
+                <p class="endline2">This content is neither created nor endorsed by Google. <a class="endline3" href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/viewform?formkey%3DdGx0b1ZrTnoyZDgtYXItMWVBdVlQQWc6MQ%26fbzx%3D-4746178908233873722"><u>Report Abuse</u></a><a class="endline3" href="https://policies.google.com/terms">-<u>Terms of Service</u></a><a class="endline3"href="https://policies.google.com/privacy">-<u>Privacy Policy</u></a></p>
+                <a class="formsImg" href="https://www.google.com/forms/about/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms" > <img class="formsImg" src="./Screenshot from 2023-06-26 15-24-47.png"/></a>
+            </div>
+        </div>
+
+        </div>
+    </form>
+</body>
+
+</html>

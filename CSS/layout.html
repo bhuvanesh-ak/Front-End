@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 3px solid #0811c4;
+            padding: 5px;
+        }
+
+        div.ex1 {
+            width: 500px;
+            margin: auto;
+            border: 3px solid #21a6ad;
+        }
+
+        div.ex2 {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid #21a6ad;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid #73AD21;
+            width: 500px;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid #73AD21;
+        }
+
+        /* It always stays in the same place even if the page is scrolled */
+        div.sticky {
+
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #c411be;
+            border: solid #1e10c0;
+        }
+
+        /* this div is positioned based on the user's scroll position. */
+        img.right {
+            float: right;
+            border: 10px;
+            margin: 10px;
+        }
+
+        /* image floats to the right in a text */
+        img.in {
+            margin: 20px;
+            box-sizing: border-box;
+            border: 10px;
+            float: left;
+            margin: 20px;
+            border-color: #c411be;
+        }
+
+        .clearfix {
+            overflow: auto;
+        }
+
+        /* image won't overflow outside the border */
+    </style>
+</head>
+
+<body>
+    <h2>CSS Max-width</h2>
+    <div class="ex1">This div element has width: 500px;</div>
+    <br>
+    <div class="ex2">This div element has max-width: 500px;</div>
+    <br>
+    <div class="relative">This div element is relatively positioned</div>
+    <br>
+    <div class="fixed">This para is fixed</div>
+    <br>
+    <div class="sticky">This para is sticky</div>
+    <img class="right" src="./download.jpeg" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+        lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+        auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu,
+        lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi,
+        sed ullamcorper ipsum dignissim ac...</p>
+    <div class="clearfix">
+        <img class="in" src="./download.jpeg" />
+        this is an example for clearfix
+    </div>
+</body>
+
+</html>
